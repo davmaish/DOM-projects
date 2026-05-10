@@ -87,7 +87,7 @@ function Ui() {
 }
 //localstorage
 let savedCount = localStorage.getItem("currentCount");
-console.log(savedCount);
+//console.log(savedCount);
 if (savedCount) {
   count = Number(savedCount);
 }

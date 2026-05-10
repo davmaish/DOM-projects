@@ -53,6 +53,12 @@ p {
   justify-content: center;
 }
 
+button:disabled {
+  grayscale: 1;
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .theme-btn {
   border: none;
   padding: 12px 20px;
