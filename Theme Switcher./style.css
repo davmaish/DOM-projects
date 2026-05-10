@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f4f4f4;
+  color: #111;
+
+  transition: all 0.4s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+}
+
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.4s ease;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  justify-content: center;
+}
+
+.theme-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  transition: transform 0.2s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* BUTTON COLORS */
+
+.theme-btn[data-theme="dark"] {
+  background: #111827;
+  color: white;
+}
+
+.theme-btn[data-theme="light"] {
+  background: #e5e7eb;
+  color: #111;
+}
+
+.theme-btn[data-theme="blue"] {
+  background: #2563eb;
+  color: white;
+}
+
+.theme-btn[data-theme="green"] {
+  background: #059669;
+  color: white;
+}
+
+.theme-btn[data-theme="random"] {
+  background: #7c3aed;
+  color: white;
+}
+
+/* THEMES */
+
+.dark-theme {
+  background: #111827;
+  color: white;
+}
+
+.dark-theme .card {
+  background: #1f2937;
+  color: white;
+}
+
+.light-theme {
+  background: #f4f4f4;
+  color: #111;
+}
+
+.light-theme .card {
+  background: white;
+  color: #111;
+}
+
+.blue-theme {
+  background: #1e3a8a;
+  color: white;
+}
+
+.blue-theme .card {
+  background: #2563eb;
+  color: white;
+}
+
+.green-theme {
+  background: #064e3b;
+  color: white;
+}
+
+.green-theme .card {
+  background: #059669;
+  color: white;
+}
