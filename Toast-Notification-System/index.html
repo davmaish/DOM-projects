@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Toast Notification System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Toast Notification System</h1>
+
+        <p>dynamic DOM creation and notification management.</p>
+
+        <div class="button-container">
+          <button class="toast-btn success-btn" data-type="success">
+            Success Toast
+          </button>
+
+          <button class="toast-btn error-btn" data-type="error">
+            Error Toast
+          </button>
+
+          <button class="toast-btn warning-btn" data-type="warning">
+            Warning Toast
+          </button>
+
+          <button class="toast-btn info-btn" data-type="info">
+            Info Toast
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOAST CONTAINER -->
+    <div class="toast-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
