@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Modal Popup System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h1>Modal Popup System</h1>
+        <p>overlays, event propagation, and advanced DOM interactions.</p>
+        <button id="open-modal-btn">Open Modal</button>
+      </div>
+    </div>
+
+    <!-- MODAL OVERLAY -->
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="close-btn">&times;</button>
+
+        <h2>Welcome!</h2>
+
+        <p>This modal was dynamically controlled using JavaScript.</p>
+
+        <button class="confirm-btn">Confirm Action</button>
+      </div>
+    </div>
+    <div class="toast-container"></div>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
