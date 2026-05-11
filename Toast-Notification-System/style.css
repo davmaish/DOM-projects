@@ -181,3 +181,19 @@ button:hover {
     transform: translateX(0);
   }
 }
+
+/* Animation for removing the toast */
+.fadeOut {
+  animation: slideOut 0.5s ease forwards;
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

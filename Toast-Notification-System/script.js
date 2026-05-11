@@ -30,15 +30,24 @@ function createToast(type) {
   //Append Child.
   toastContainer.appendChild(newCard);
 
+  ///function to handle Removal
+  function removeToast(element) {
+    element.classList.add("fadeOut");
+
+    setTimeout(() => {
+      element.remove();
+    }, 500);
+  }
+
   ///auto remove
   const timer = setTimeout(() => {
-    newCard.remove();
+    removeToast(newCard);
   }, 5000);
 
   //manual remove
   newCard.querySelector(".close-btn").addEventListener("click", () => {
     clearTimeout(timer);
-    newCard.remove();
+    removeToast(newCard);
   });
 }
 
